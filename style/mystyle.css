@@ -1,0 +1,267 @@
+/*------------ add Import ------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/* ------------ Start Style --------------*/
+
+body{
+   background-color: #02010a;
+   padding-right: 40px;
+}
+
+header{
+  background-color: #5b7989;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  height: 10%;
+  padding: 15px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+header h1 {
+  float: left;
+  color: white;
+  text-shadow: 2px 2px 5px  #02010a;
+  width: 70%;
+  height: 100%;
+}
+
+header nav{
+  margin: auto;
+  text-align: center;
+  float: right;
+  height: 100%;
+  width: 30%;
+}
+
+a{
+  font-size: 2em;
+  text-decoration: underline;
+  color: white;
+  margin: 10px;
+}
+
+a:active{
+  text-decoration: none;
+}
+
+a:hover{
+  text-shadow: 2px 2px 5px #02010a;
+}
+
+article{
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+}
+
+article img{
+  border: 1px solid black;
+}
+
+footer{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 15px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+}
+
+div h2 {
+  font-size: 2em;
+}
+
+img[src$="facebook.svg"], img[src$="instagram.png"]{
+  height: 20px;
+  margin-right: 10px;
+}
+
+/*---------------- Style Class --------------*/
+
+#contenido{
+  max-width: 900px;
+  margin: auto;
+}
+.footer{
+  padding-left: 5%;
+  width: 20%;
+}
+
+.texto{
+  font-family: 'Dancing Script', cursive;
+}
+
+.imgCentral{
+  width: 35%;
+}
+
+.imgOne{
+  text-align: center;
+  background-color: #82c3a6;
+}
+
+.imgTwo{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 100%;
+  background-color: #d5c75f;
+}
+
+.imgLeft{
+ width: 75%;
+ transition: 1s;
+}
+
+.imgRigth{
+ width: 75%;
+ transition: 1s;
+}
+
+.imgLeft:hover{
+ transform: rotate(10deg);
+ border: 2px solid black;
+ box-shadow: 3px 3px 5px #82c3a6;
+}
+
+.imgRigth:hover{
+  transform: translate(20px, -5px);
+  border: 2px solid black;
+  box-shadow: 3px 3px 5px #82c3a6;
+}
+
+.active{
+  text-decoration: none;
+}
+
+.paisaje{
+  width: 50%;
+}
+
+.retrato{
+  width: 50%;
+}
+
+.galeriaImg{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 15px;
+  width: 100%;
+  background-color: #d5c75f;
+}
+
+.posImg{
+width: 30%;
+}
+
+.imgPaisaje{
+width: 90%;
+}
+
+.imgRetrato{
+width: 90%;
+}
+
+.filterBlur{
+  filter: blur(10px);
+}
+
+.filterGray{
+  filter: grayscale(100%);
+}
+
+.filterSepia{
+  filter: sepia(90%);
+}
+
+/*------------------- Web Response ------------------*/
+/*-----------Medida movil---------*/
+@media all and (max-width: 899px) {
+  /* ------------ Start Style --------------*/
+
+  header{
+    width: 100%;
+  }
+  header h1{
+    text-align: center;
+    width: 100%;
+  }
+  header nav{
+    width: 100%;
+  }
+
+/*---------------- Style Class --------------*/
+  .paisaje{
+    width: 100%;
+  }
+
+  .retrato{
+    width: 100%;
+  }
+
+  .imgLeft{
+   width: 90%;
+  }
+
+  .imgRigth{
+   width: 90%;
+  }
+
+  .imgCentral{
+    width: 90%;
+  }
+
+  .footer{
+    width: 100%;
+  }
+
+  .posImg{
+  width: 100%;
+  }
+
+  #contenido{
+    animation: movieContenedor 2s;
+  }
+
+}
+/*--------Medida media-----------*/
+@media all and (min-width: 900px) and (max-width:2000px){
+  /* ------------ Start Style --------------*/
+  header{
+    width: 100%;
+  }
+  header h1{
+    text-align: center;
+    width: 50%;
+  }
+  header nav{
+    width: 50%;
+  }
+
+/*---------------- Style Class --------------*/
+  .imgLeft{
+   width: 90%;
+  }
+
+  .imgRigth{
+   width: 90%;
+  }
+
+  .imgCentral{
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes movieContenedor{
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
